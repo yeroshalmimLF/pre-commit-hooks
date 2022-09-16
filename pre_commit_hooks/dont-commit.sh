@@ -2,7 +2,7 @@
 
 #
 # To prevent debug code from being accidentally committed, simply add a comment near your
-# debug code containing the keyword !nocommit and this script will abort the commit.
+# debug code containing the keyword DONTCOMMIT and this script will abort the commit.
 #
 if git commit -v --dry-run | grep --color -B 2 -A 2 'DONTCOMMIT'  #>/dev/null 2>&1
 then
