@@ -1,0 +1,6 @@
+-   id: dont-commit
+    name: Dont Commit
+    description: This hook will fail if you try to commit a file with the word "DONTCOMMIT" in it.
+    entry: pre_commit_hooks/dont-commit.sh
+    language: script
+    types: [text]
